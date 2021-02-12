@@ -7,3 +7,6 @@ Add this inside:
 "token": "<tokenhere>"
 }
 ```
+
+Feel free to use the bot for your needs. All I ask, is to keep the original github repos link 
+in the embled. Thank you!
