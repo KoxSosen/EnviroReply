@@ -115,7 +115,7 @@ const Discord = require('discord.js'); // libs
             message.channel.send("https://media1.tenor.com/images/27e6a4a6de06644d0d449c242ca1996d/tenor.gif?itemid=8371338");
 			}}
 
-			for (var n=0; n < SexyNerd.length; n++) {
+			for (var n=0; n < servericon.length; n++) {
 			if (msgcontent.includes(servericon[n])) {
 			message.channel.send({embed: {
 			title: "EnviroMC Reply",
@@ -125,13 +125,13 @@ const Discord = require('discord.js'); // libs
 			}});
 			}}
 
-			for (var v=0; v < SexyNerd.length; v++) {
+			for (var v=0; v < plugins.length; v++) {
 			if (msgcontent.includes(plugins[v])) {
 			message.channel.send({embed: {
 			title: "EnviroMC Reply",
 			url: "https://github.com/KoxSosen/EnviroReply",
 			color: 3066993,
-			description: "Hello! To install plugins for your server, please click on the linK: https://bukkit.gamepedia.com/Installing_Plugins "
+			description: "Hello! To install plugins for your server, please click on the link: https://bukkit.gamepedia.com/Installing_Plugins "
 			}});
 			}}
 
@@ -141,7 +141,7 @@ const Discord = require('discord.js'); // libs
 
 
 
-	
+
 	});
 
 	bot.login(config.token);
