@@ -15,10 +15,13 @@ const Discord = require('discord.js'); // libs
 	var plugins = ["install plugins"]
 
 
+	const channelIDs = ['732623827917602837']; // channel ids for channel restrection.
+
+
 		bot.on('message', (message) => {
 			if(message.author.bot) return;
 			const msgcontent = message.content.toLowerCase();
-			if (message.channel.id === '732623827917602837' || message.channel.id === '732623846137528332') {
+			if (channelIDs.includes(message.channel.id)) return;
 			for (var i=0; i < domain.length; i++) {
 			if (msgcontent.includes(domain[i])) {
 		    message.channel.send({embed: {
@@ -138,7 +141,7 @@ const Discord = require('discord.js'); // libs
 
 
 
-	}
+	
 	});
 
 	bot.login(config.token);
